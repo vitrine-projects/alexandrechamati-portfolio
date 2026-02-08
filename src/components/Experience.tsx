@@ -21,9 +21,9 @@ interface ExperienceItem {
 const experiences: ExperienceItem[] = [
   {
     yearStart: '2021',
-    yearEnd: 'Présent',
+    yearEnd: '2025',
     badgeClass: 'active',
-    badgeLabel: 'En cours',
+    badgeLabel: 'Senior',
     logo: '/images/kicklox.png',
     logoAlt: 'Kicklox',
     title: 'Développeur Fullstack',

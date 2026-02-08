@@ -33,7 +33,7 @@ export default function About() {
               je maîtrise l'ensemble de la stack pour créer des expériences utilisateur exceptionnelles.
             </p>
             <p>
-              Actuellement chez <strong>Kicklox</strong> en télétravail, j'intègre des solutions d'IA
+              Lors de mon dernier poste chez <strong>Kicklox</strong> en télétravail, j'intègre des solutions d'IA
               et optimise des architectures multi-tenant. J'ai également dirigé des équipes techniques
               chez Pharmanity et remporté un <strong>Prix Innovation</strong> chez Enedis.
             </p>
