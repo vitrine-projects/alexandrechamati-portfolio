@@ -27,22 +27,7 @@ const skillObserver = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Animate timeline cards
-const timelineObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateX(0)';
-        }
-    });
-}, observerOptions);
 
-document.querySelectorAll('.timeline-card').forEach((card, index) => {
-    card.style.opacity = '0';
-    card.style.transform = 'translateX(-30px)';
-    card.style.transition = `all 0.6s ease ${index * 0.1}s`;
-    timelineObserver.observe(card);
-});
 
 // Navbar scroll effect
 let lastScroll = 0;
