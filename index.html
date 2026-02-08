@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexandre Chamati - Développeur Full Stack</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="public/favicon.svg">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -16,12 +17,14 @@
             <div class="nav-brand">
                 <span class="brand-logo">𐤀𐤂</span>
                 <span class="brand-name">Alexandre Chamati</span>
+                <img src="assets/images/avatar.png" alt="Avatar" class="brand-avatar">
             </div>
             <ul class="nav-menu">
                 <li><a href="#skills">Compétences</a></li>
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#hobbies">Hobbies</a></li>
                 <li><a href="#experience">Parcours</a></li>
+                <li><a href="#projects">Projets</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -32,23 +35,37 @@
         <div class="container">
             <div class="hero-content">
                 <h2 class="hero-title-badge">Développeur Full Stack<br>Web & Mobile 🚀</h2>
-                <h1>Alexandre Chamati</h1>
+                <div class="hero-title-wrapper">
+                    <h1>Alexandre Chamati</h1>
+                    <img src="assets/images/avatar.png" alt="Avatar Alexandre" class="hero-avatar">
+                </div>
                 <p class="hero-intro">
                     Créateur d'expériences web performantes et scalables.<br>
-                    <strong>8+ ans d'expertise</strong> en JavaScript, React, Node.js, Ruby & Python.
+                    <strong>8+ ans d'expertise</strong> en JavaScript, React, Node.js, Ruby, PHP, Python.
                 </p>
                 <div class="hero-stats">
-                    <div class="stat-card">
-                        <div class="stat-value">8+</div>
-                        <div class="stat-label">Années</div>
+                    <div class="stat-item">
+                        <span class="stat-icon">⏳</span>
+                        <div class="stat-content">
+                            <span class="stat-value">8+</span>
+                            <span class="stat-label">ans d'expérience</span>
+                        </div>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-value">20+</div>
-                        <div class="stat-label">Technologies</div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-icon">🛠️</span>
+                        <div class="stat-content">
+                            <span class="stat-value">20+</span>
+                            <span class="stat-label">technologies</span>
+                        </div>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-value">50+</div>
-                        <div class="stat-label">Projets</div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-icon">🚀</span>
+                        <div class="stat-content">
+                            <span class="stat-value">20+</span>
+                            <span class="stat-label">projets livrés</span>
+                        </div>
                     </div>
                 </div>
                 <a href="#skills" class="btn-scroll">
@@ -147,6 +164,15 @@
                             <div class="skill-pill" data-level="87">
                                 <div class="skill-pill-header">
                                     <span>Node.js</span>
+                                    <span class="skill-level">7 ans</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" style="width: 87%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-pill" data-level="87">
+                                <div class="skill-pill-header">
+                                    <span>NestJS</span>
                                     <span class="skill-level">7 ans</span>
                                 </div>
                                 <div class="skill-progress">
@@ -318,7 +344,7 @@
         <div class="container">
             <div class="section-header">
                 <h2>À propos de moi</h2>
-                <p>Passionné par la création d'applications web performantes</p>
+                <p>Passionné par la création d'applications Web & Mobile</p>
             </div>
 
             <div class="about-content">
@@ -391,8 +417,8 @@
                 </div>
                 <div class="hobby-card">
                     <div class="hobby-icon">💻 📱</div>
-                    <h4>Je code quand même</h4>
-                    <p>Développement et projets personnels</p>
+                    <h4>Je code quand même !</h4>
+                    <p>Développement projets personnels, Web & Mobile</p>
                 </div>
             </div>
         </div>
@@ -414,8 +440,13 @@
                     </div>
                     <div class="timeline-card">
                         <div class="card-badge active">En cours</div>
-                        <h3>Développeur Fullstack</h3>
-                        <h4>Kicklox • Télétravail</h4>
+                        <div class="card-title-row">
+                            <img src="assets/images/kicklox.png" alt="Kicklox" class="company-logo">
+                            <div>
+                                <h3>Développeur Fullstack</h3>
+                                <h4>Kicklox • Télétravail</h4>
+                            </div>
+                        </div>
                         <p class="description">
                             Application de recrutement innovante connectant talents et entreprises,
                             avec gestion complète du cycle de mission.
@@ -427,12 +458,30 @@
                             <li>Développement moteurs de recherche avancés avec ElasticSearch</li>
                         </ul>
                         <div class="tech-tags">
-                            <span>React</span>
-                            <span>Ruby on Rails</span>
-                            <span>TypeScript</span>
-                            <span>GraphQL</span>
-                            <span>ElasticSearch</span>
-                            <span>Azure</span>
+                            <div class="tech-tags-row">
+                                <span class="tech-primary">TypeScript</span>
+                                <span class="tech-primary">Vite</span>
+                                <span class="tech-primary">React</span>
+                                <span class="tech-primary">NodeJS</span>
+                                <span class="tech-primary">RubyOnRails</span>
+                                <span class="tech-primary">ElasticSearch</span>
+                                <span class="tech-primary">GraphQL</span>
+                            </div>
+                            <div class="tech-tags-row">
+                                <span class="tech-secondary">html/scss</span>
+                                <span class="tech-secondary">Sidekiq</span>
+                                <span class="tech-secondary">Redis</span>
+                                <span class="tech-secondary">PostgreSQL</span>
+                                <span class="tech-secondary">JavaScript</span>
+                                <span class="tech-secondary">Algolia</span>
+                                <span class="tech-secondary">API REST</span>
+                                <span class="tech-secondary">Jest</span>
+                            </div>
+                            <div class="tech-tags-row">
+                                <span class="tech-infra">Cloud Azure (Web Apps)</span>
+                                <span class="tech-infra">OVH</span>
+                                <span class="tech-infra">Docker</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -444,8 +493,13 @@
                     </div>
                     <div class="timeline-card">
                         <div class="card-badge lead">Lead</div>
-                        <h3>Lead Développeur Fullstack</h3>
-                        <h4>Pharmanity • Télétravail</h4>
+                        <div class="card-title-row">
+                            <img src="assets/images/pharmanity.png" alt="Pharmanity" class="company-logo">
+                            <div>
+                                <h3>Lead Développeur Fullstack</h3>
+                                <h4>Pharmanity • Télétravail</h4>
+                            </div>
+                        </div>
                         <p class="description">
                             Plateforme e-santé avec écosystème web et mobile pour pharmacies.
                         </p>
@@ -455,10 +509,26 @@
                             <li>Gestion infrastructure Kubernetes et déploiements</li>
                         </ul>
                         <div class="tech-tags">
-                            <span>React Native</span>
-                            <span>Symfony</span>
-                            <span>FastAPI</span>
-                            <span>Kubernetes</span>
+                            <div class="tech-tags-row">
+                                <span class="tech-primary">TypeScript</span>
+                                <span class="tech-primary">React</span>
+                                <span class="tech-primary">ReactNative</span>
+                                <span class="tech-primary">Symfony</span>
+                                <span class="tech-primary">ElasticSearch</span>
+                                <span class="tech-primary">FastAPI</span>
+                            </div>
+                            <div class="tech-tags-row">
+                                <span class="tech-secondary">html/css</span>
+                                <span class="tech-secondary">PHP</span>
+                                <span class="tech-secondary">CodeIgniter</span>
+                                <span class="tech-secondary">JavaScript</span>
+                                <span class="tech-secondary">MySQL</span>
+                            </div>
+                            <div class="tech-tags-row">
+                                <span class="tech-infra">Kubernetes</span>
+                                <span class="tech-infra">Docker</span>
+                                <span class="tech-infra">OVH</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -470,8 +540,13 @@
                     </div>
                     <div class="timeline-card">
                         <div class="card-badge award">Prix Innovation</div>
-                        <h3>Développeur Web</h3>
-                        <h4>Enedis • Carcassonne</h4>
+                        <div class="card-title-row">
+                            <img src="assets/images/enedis.png" alt="Enedis" class="company-logo">
+                            <div>
+                                <h3>Développeur Web</h3>
+                                <h4>Enedis • Carcassonne</h4>
+                            </div>
+                        </div>
                         <p class="description">
                             Applications métier pour gestion d'infrastructures électriques.
                         </p>
@@ -480,9 +555,17 @@
                             <li>Outil de planification des travaux</li>
                         </ul>
                         <div class="tech-tags">
-                            <span>PHP</span>
-                            <span>CodeIgniter</span>
-                            <span>MySQL</span>
+                            <div class="tech-tags-row">
+                                <span class="tech-primary">CodeIgniter</span>
+                                <span class="tech-primary">Jquery</span>
+                                <span class="tech-primary">Ajax</span>
+                            </div>
+                            <div class="tech-tags-row">
+                                <span class="tech-secondary">html/css</span>
+                                <span class="tech-secondary">PHP</span>
+                                <span class="tech-secondary">JavaScript</span>
+                                <span class="tech-secondary">MySQL</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -494,8 +577,13 @@
                     </div>
                     <div class="timeline-card">
                         <div class="card-badge study">Alternance</div>
-                        <h3>Développeur Web/BI</h3>
-                        <h4>Kaduceo • Toulouse</h4>
+                        <div class="card-title-row">
+                            <img src="assets/images/kaduceo.png" alt="Kaduceo" class="company-logo">
+                            <div>
+                                <h3>Développeur Web/BI</h3>
+                                <h4>Kaduceo • Toulouse</h4>
+                            </div>
+                        </div>
                         <p class="description">
                             Store d'applications pour hôpitaux et Business Intelligence.
                         </p>
@@ -504,11 +592,56 @@
                             <li>Traitement de volumes massifs de données (BI)</li>
                         </ul>
                         <div class="tech-tags">
-                            <span>Symfony</span>
-                            <span>Python</span>
+                            <div class="tech-tags-row">
+                                <span class="tech-primary">Symfony</span>
+                                <span class="tech-primary">JavaScript</span>
+                                <span class="tech-primary">Jquery</span>
+                                <span class="tech-primary">Ajax</span>
+                                <span class="tech-primary">Python</span>
+                            </div>
+                            <div class="tech-tags-row">
+                                <span class="tech-secondary">html/css</span>
+                                <span class="tech-secondary">PHP</span>
+                                <span class="tech-secondary">MySQL</span>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets Perso Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projets personnels</h2>
+                <p>Des projets réalisés avec passion en dehors du cadre professionnel</p>
+            </div>
+
+            <div class="projects-grid">
+                <a href="https://www.formatechsport.fr" target="_blank" rel="noopener noreferrer" class="project-card">
+                    <img src="assets/images/formatechsport.png" alt="FormatechSport" class="project-image">
+                    <div class="project-year">2019</div>
+                    <h3>FormatechSport</h3>
+                    <p class="project-url">www.formatechsport.fr</p>
+                    <p class="project-description">
+                        Plateforme web pour accompagner des jeunes sportifs dans le monde associatif, avec un outil simple pour annoncer et organiser leurs sessions sportives, en extérieur et en gymnase.
+                    </p>
+                    <div class="tech-tags">
+                        <div class="tech-tags-row">
+                            <span class="tech-primary">NextJs</span>
+                            <span class="tech-primary">React</span>
+                            <span class="tech-primary">Strapi</span>
+                        </div>
+                        <div class="tech-tags-row">
+                            <span class="tech-secondary">Sass</span>
+                        </div>
+                        <div class="tech-tags-row">
+                            <span class="tech-infra">MongoDB</span>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -554,11 +687,10 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>© 2026 Alexandre Chamati • Développeur Full Stack</p>
-            <p class="footer-sub">Conçu avec passion et du code propre</p>
+            <p>© 2026 Alexandre Chamati</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

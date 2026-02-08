@@ -27,13 +27,6 @@ const skillObserver = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-document.querySelectorAll('.skill-pill').forEach((pill, index) => {
-    pill.style.opacity = '0';
-    pill.style.transform = 'translateX(-20px)';
-    pill.style.transition = `all 0.5s ease ${index * 0.05}s`;
-    skillObserver.observe(pill);
-});
-
 // Animate timeline cards
 const timelineObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -151,6 +144,26 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Active nav link on scroll
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-menu a');
+
+const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${id}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+    });
+}, { threshold: 0.3, rootMargin: '-80px 0px 0px 0px' });
+
+sections.forEach(section => sectionObserver.observe(section));
 
 console.log('%c✨ Portfolio Alexandre Chamati', 'font-size: 20px; color: #27c93f; font-weight: bold;');
 console.log('%c👋 Merci de visiter mon portfolio!', 'font-size: 14px; color: #16a34a;');
