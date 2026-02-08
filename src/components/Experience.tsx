@@ -28,7 +28,7 @@ const experiences: ExperienceItem[] = [
     logoAlt: 'Kicklox',
     title: 'Développeur Fullstack',
     subtitle: 'Kicklox • Télétravail',
-    description: "Application de recrutement innovante connectant talents et entreprises, avec gestion complète du cycle de mission.",
+    description: "Application de recrutement IT innovante connectant talents et entreprises, avec gestion complète du cycle de mission.",
     achievements: [
       'Migration frontend vers Vite et architecture multi-tenant',
       "Intégration de solutions IA pour automatisation des processus",
@@ -71,7 +71,7 @@ const experiences: ExperienceItem[] = [
     logoAlt: 'Enedis',
     title: 'Développeur Web',
     subtitle: 'Enedis • Carcassonne',
-    description: "Applications métier pour gestion d'infrastructures électriques.",
+    description: "Création from scratch d'applications métier pour deux services internes d'Enedis.",
     achievements: [
       'Application gestion conventions (Prix Innovation interne)',
       'Outil de planification des travaux',
@@ -90,7 +90,7 @@ const experiences: ExperienceItem[] = [
     logoAlt: 'Kaduceo',
     title: 'Développeur Web/BI',
     subtitle: 'Kaduceo • Toulouse',
-    description: "Store d'applications pour hôpitaux et Business Intelligence.",
+    description: "Création from scratch du produit de la start-up : un store d'applications pour hôpitaux et Business Intelligence.",
     achievements: [
       'Développement plateforme de gestion données hospitalières',
       'Traitement de volumes massifs de données (BI)',
