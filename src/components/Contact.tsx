@@ -44,6 +44,41 @@ export default function Contact() {
                 <p>06 50 56 01 18</p>
               </div>
             </a>
+            <a href="https://www.linkedin.com/in/alexandre-chamati-743190105/" target="_blank" rel="noopener noreferrer" className="contact-card">
+              <div className="contact-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+              <div className="contact-info">
+                <h4>LinkedIn</h4>
+                <p>Alexandre Chamati</p>
+              </div>
+            </a>
+
+            <a href="https://github.com/alexchamati" target="_blank" rel="noopener noreferrer" className="contact-card">
+              <div className="contact-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+              <div className="contact-info">
+                <h4>GitHub</h4>
+                <p>alexchamati</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
