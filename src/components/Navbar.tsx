@@ -1,11 +1,11 @@
 import { useEffect, useRef } from 'react';
 
 const navLinks = [
-  { href: '#skills', label: 'Compétences' },
   { href: '#about', label: 'À propos' },
-  { href: '#hobbies', label: 'Hobbies' },
+  { href: '#skills', label: 'Compétences' },
   { href: '#experience', label: 'Parcours' },
   { href: '#projects', label: 'Projets' },
+  { href: '#hobbies', label: 'Hobbies' },
   { href: '#contact', label: 'Contact' },
 ];
 
