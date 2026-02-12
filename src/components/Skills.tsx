@@ -78,9 +78,9 @@ interface AdditionalSkillBox {
 }
 
 const additionalSkills: AdditionalSkillBox[] = [
-  { title: 'API & Architecture', tags: ['REST API', 'GraphQL', 'Microservices', 'Multi-tenant'] },
+  { title: 'API & Architecture', tags: ['REST API', 'GraphQL','Microservices', 'Multi-tenant', 'Architecture Hexagonale', 'DDD'] },
   { title: 'Méthodologies', tags: ['Agile/Scrum', 'TDD', 'Code Review', 'CI/CD'] },
-  { title: 'Outils & Services', tags: ['Algolia', 'Sidekiq', 'Jest', 'Vite'] },
+  { title: 'Outils & Services', tags: ['Algolia', 'Sidekiq', 'Jest', 'MiniTest', 'Vite'] },
 ];
 
 function getSkillTier(percent: number): string {
